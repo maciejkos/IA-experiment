@@ -1,0 +1,39 @@
+#application: mkosblog
+#application: badanie-naukowe
+application: harmonia2014-pilot
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /scripts
+  static_dir: scripts
+
+- url: /css
+  static_dir: css
+
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: ./tasks
+  script: main.app
+  secure: never
+
+- url: .*
+  script: main.app
+  secure: always
+
+libraries:
+- name: webapp2
+  version: "2.5.2"
+
+- name: jinja2
+  version: latest
+
+- name: django
+  version: "1.2"
+
+- name: numpy
+  version: latest
