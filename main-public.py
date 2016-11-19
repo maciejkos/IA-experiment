@@ -14,7 +14,7 @@
 # check trello for more info
 # 8 March 2015 - change log. Added randomization and changed questions in RteDemo from race to spirituality. Also
 # changed Ania's questions in AddABG2 from reputation to genetic tests. Finally, tons of technical updates.
-# 1/27/2016 - big changes to the experiment - struckture and parameters
+# 1/27/2016 - big changes to the experiment - structure and parameters
 
 
 import os
